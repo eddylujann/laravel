@@ -26,58 +26,15 @@
                     <a class="nav-link" href="#"><b class="text-white">Hola, Identifícate</b> </a>
                 </li>
             </ul>
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar1" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn dll-bg-orange my-2 my-sm-0" type="submit"> <b>Buscar</b> </button>
         </div>
     </div>
 </nav>
 
-
-{{-- <div class="container">
-    <div class="nav-scroller py-1 mb-2">
-        <nav class="navbar bg-white nav d-flex justify-content-between ">
-            <ul class="nav nav-pills form-group form-row">
-                <li class="nav-item">
-                    <a class="nav-link {{ setActive('home') }}"  href="{{ route('home') }}"> 
-                        <b class="text-dark">@lang('Productos')</b> 
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link {{ setActive('about') }}" href="{{ route('about') }}">
-                        <b class="text-dark">@lang('Servicio al cliente')</b> 
-                    </a>
-                </li>
-
-                <li class="nav-item" >
-                    <a class="nav-link {{ setActive('portafolio') }}" href="{{ route('portafolio') }}"> 
-                        <b class="text-dark">@lang('Eventos')</b> 
-                    </a>
-                </li>
-
-                <li class="nav-item" >
-                    <a class="nav-link {{ setActive('contact') }}" href="{{ route('contact') }}"> 
-                        <b class="text-dark">@lang('Soporte')</b> 
-                    </a>
-                </li>
-
-                <li class="nav-item" >
-                    <a class="nav-link {{ setActive('login') }}" href="{{ route('login') }}"> 
-                        <b class="text-dark"> @lang('Login')</b> 
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <hr>
-</div> --}}
-
-
-
-<div class="container ">
-    <div class="nav-scroller py-2 mb-0 ">
+<div class="container">
+    <div class="nav-scroller py-2 mb-0">
         <nav class="nav d-flex justify-content-between">
-
             <a class="p-2 text-muted nav-link {{ setActive('home') }}"  href="{{ route('home') }}"> 
                 <b>@lang('Productos')</b> 
             </a>
@@ -97,12 +54,9 @@
             <a class="p-2 text-muted nav-link {{ setActive('login') }}" href="{{ route('login') }}"> 
                 <b> @lang('Login')</b>  
             </a>
-
             <a class="p-2 text-muted" href="#">Design</a>
             <a class="p-2 text-muted" href="#">Culture</a>
             <a class="p-2 text-muted" href="#">Business</a>
-
         </nav>
-      </div>
-    
+    </div>
 </div>
