@@ -1,36 +1,58 @@
-<nav class="navbar navbar-expand-lg navbar-ligh dll-bg-blue ">
-    <a class="navbar-brand" href="#"> 
-        <b class="text-white">Dllmarket</b>
-    </a>
-    
-    <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+@include('menu.menulateral')
+
+<nav class="navbar navbar-expand-md navbar-dark  dll-bg-blue">
+    <div class="d-flex flex-grow-1">
+
+        <a class="navbar-brand" href="#"> 
+             <span class="text-white " style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>  
+        </a>
+        <a class="navbar-brand" href="#">
+            <b class="text-white">Dllmarket</b>
+        </a>
+        <form class="mr-2 my-auto w-100 d-inline-block order-1">
+            <div class="input-group">
+                <input type="text" class="form-control border border-right-0" placeholder="Search...">
+                <span class="input-group-append ">
+                    <button class="btn btn-white  border border-left-0" type="button">
+                        <i class="fa fa-search text-white"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+    </div>
+    <button class="navbar-toggler order-0" type="button" data-toggle="collapse" data-target="#navbar7">
         <span class="navbar-toggler-icon"></span>
     </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto"></ul>
-        <div class="form-inline my-2 my-lg-1">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <b class="text-white">Idioma</b>   
-                    </a>  
-                    <div class="dropdown-menu"  aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">English</a>
-                        <a class="dropdown-item" href="#">Español</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Cambiar pais/región</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><b class="text-white">Hola, Identifícate</b> </a>
-                </li>
-            </ul>
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn dll-bg-orange my-2 my-sm-0" type="submit"> <b>Buscar</b> </button>
-        </div>
+    <div class="navbar-collapse collapse flex-shrink-1 flex-grow-0 order-last" id="navbar7">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b class="text-white">Idioma</b>   
+                </a>  
+                <div class="dropdown-menu"  aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">English</a>
+                    <a class="dropdown-item" href="#">Español</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Cambiar pais/región</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"> <b class="text-white">Pedidos</b> </a>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn dll-bg-orange "> <b>Hola, Identifícate </button>
+                {{-- <a class="nav-link" href="#"><b class="dll-text-blue">Hola, Identifícate</b> </a> --}}
+            </li>
+
+        </ul>
     </div>
 </nav>
+
+
+
+
+
+
 
 <div class="container">
     <div class="nav-scroller py-2 mb-0">

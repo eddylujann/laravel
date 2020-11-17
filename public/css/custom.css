@@ -61,3 +61,87 @@
     to {transform: scale(1.5, 1.5);}
 }
 .carousel-inner .item > img {-webkit-animation: zoom 20s;animation: zoom 20s;}
+
+/* STYLE FOR MENU LATERAL IZQUIERDA */
+.sidenav {height: 100%;width: 0;position: fixed;z-index: 1;top: 0;left: 0;background-color:#072146;overflow-x: hidden;transition: 0.5s;padding-top: 60px;}
+.sidenav a {padding: 8px 8px 8px 32px;text-decoration: none;font-size: 25px;color: #818181;display: block;transition: 0.3s;}
+.sidenav a:hover {color: #f1f1f1;}
+.sidenav .closebtn {position: absolute;top: 0;right: 25px;font-size: 36px;margin-left: 50px;}
+@media screen and (max-height: 450px) {.sidenav {padding-top: 15px;}.sidenav a {font-size: 18px;}} 
+
+
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+  
+  .page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+  }
+  
+  /* for toggle behavior */
+  
+  #sidebar.active {
+    margin-left: -17rem;
+  }
+  
+  #content.active {
+    width: 100%;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    #sidebar {
+      margin-left: -17rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 17rem;
+      width: calc(100% - 17rem);
+    }
+  }
+  
+  /*
+  *
+  * ==========================================
+  * FOR DEMO PURPOSE
+  * ==========================================
+  *
+  */
+
+  .separator {
+    margin: 3rem 0;
+    border-bottom: 1px dashed #fff;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  
+  .text-gray {
+    color: #aaa;
+  }
+  
