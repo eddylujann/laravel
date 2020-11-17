@@ -26,7 +26,7 @@
                     <a class="nav-link" href="#"><b class="text-white">Hola, Identifícate</b> </a>
                 </li>
             </ul>
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar1" aria-label="Search">
             <button class="btn dll-bg-orange my-2 my-sm-0" type="submit"> <b>Buscar</b> </button>
         </div>
     </div>
