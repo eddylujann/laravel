@@ -2,10 +2,10 @@
 
 {{-- Se pone un nombre al section para luego incrustaelo al layout --}}
 @section('content-welcome')
-
     {{--------------------------------------------------------
         Productos destacados
-    --------------------------------------------------------}}
+    --------------------------------------------------------
+    
     {{-- <div class="card text-center"> --}}
     <div class="text-center">
         <div class="card-body">
