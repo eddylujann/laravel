@@ -1,29 +1,34 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'ddlmarket')</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@yield('title', 'ddlmarket')</title>
 
-    {{-- app.css es de bootstrap --}}
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <script src="{{asset('js/app.js')}}"></script>
+        {{-- app.css es de bootstrap --}}
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <link rel="stylesheet" href="{{asset('css/custom.css')}}">
+        <script src="{{asset('js/app.js')}}"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+        
 
-    <link rel="stylesheet" href="{{asset('css/custom.css')}}">
+        <style>
+            
+        </style>
+    </head>
+ 
+    <body class="bg-white">
+        {{-- NAV --}}
+        @include('partials.nav') 
 
-    <style>
-        .active a {
-            color: red;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    {{-- <Esta directiva incrusta el blade que se encuentra en views/partials/nav.blade.php (Es por tenerlo mas organizado) --}}
-    @include('partials.nav') 
+        {{-- CAROUSEL --}}
+        @include('partials.carousel') 
 
-    {{-- Esta directiva incrusta el contenido dicamicamente de otra vista  --}}
-    @yield('content')
-</body>
+        {{-- BODY  --}}
+        @yield('content-welcome')
+        
+        {{-- FOOTER  --}}
+        @include('partials.footer') 
+    </body>
 </html>
